@@ -5,11 +5,14 @@ footer,
   margin: 0;
 }
 .find-city {
-  margin: 10px 0;
+  margin: 10px 0 0;
 }
 .current-date {
-  display: block;
+  text-align: center;
 }
 .current-weather {
   text-align: center;
+}
+.current-temperature {
+  font-size: 95px;
 }
