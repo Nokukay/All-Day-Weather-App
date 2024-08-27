@@ -16,3 +16,8 @@ footer,
 .current-temperature {
   font-size: 95px;
 }
+.current-condition {
+  position: relative;
+  left: 540px;
+  font-size: 15px;
+}
