@@ -1,6 +1,15 @@
-h1 {
+h1,
+footer,
+.find-city {
   text-align: center;
+  margin: 0;
 }
-footer {
+.find-city {
+  margin: 10px 0;
+}
+.current-date {
+  display: block;
+}
+.current-weather {
   text-align: center;
 }
