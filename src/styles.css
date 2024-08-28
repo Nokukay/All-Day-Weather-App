@@ -11,17 +11,19 @@ h1,
   text-align: center;
 }
 .enter-city {
-  background: #b5c3e0;
+  background: whitesmoke;
   border: 1px solid #b5c3e0;
-  border-radius: 40px;
-  color: white;
+  border-radius: 15px;
+  color: black;
+  padding: 6px;
+  font-weight: bold;
 }
 .search-city {
   background: white;
   transition: all 200ms ease-in-out;
 }
 .search-city:hover {
-  background: #48a6d8;
+  background: #b5c3e0;
   color: white;
   cursor: pointer;
 }
