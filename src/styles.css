@@ -11,9 +11,10 @@ h1,
   text-align: center;
 }
 .enter-city {
-  background: blue;
+  background: #b5c3e0;
   border: 1px solid #b5c3e0;
   border-radius: 40px;
+  color: white;
 }
 .search-city {
   background: white;
