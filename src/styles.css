@@ -3,6 +3,7 @@ h1,
   text-align: center;
   margin: 0;
 }
+
 .find-city {
   position: relative;
   left: 10px;
@@ -11,6 +12,9 @@ h1,
 }
 .enter-city {
   background: #f9f7fe;
+}
+.search-city {
+  background: #48a6d8;
 }
 footer {
   text-align: center;
@@ -48,7 +52,7 @@ footer {
   max-width: 250px;
   margin: 0 auto;
   padding: 15px 0;
-  background: rgb(245, 245, 245, 0.7);
+  background: rgb(245, 245, 245, 0.5);
 }
 .humidity,
 .wind {
@@ -61,7 +65,10 @@ footer {
 .wind-value {
   font-weight: bolder;
 }
-
+.humidity-icon,
+.wind-icon {
+  font-size: 25px;
+}
 .mainBody {
   background: rgb(245, 245, 245, 0.2);
   max-width: 700px;
