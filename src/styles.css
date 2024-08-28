@@ -4,8 +4,13 @@ h1,
   margin: 0;
 }
 .find-city {
+  position: relative;
+  left: 10px;
   margin: 10px 0 0;
   text-align: center;
+}
+.enter-city {
+  background: #f9f7fe;
 }
 footer {
   text-align: center;
@@ -17,7 +22,11 @@ footer {
   margin: 0;
 }
 .current-weather {
+  position: relative;
+  left: 40px;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 .current-temperature {
   font-size: 95px;
@@ -27,6 +36,7 @@ footer {
   left: 250px;
   font-size: 15px;
   margin: 0 0 30px 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .humidity-wind {
   display: flex;
@@ -34,8 +44,10 @@ footer {
   align-items: center; /* Centers items vertically */
   gap: 20px; /* Optional: Adds space between the humidity and wind sections */
   border: 1px solid #e8e6fe;
-  max-width: 300px;
+  border-radius: 40px;
+  max-width: 250px;
   margin: 0 auto;
+  padding: 15px 0;
 }
 .humidity,
 .wind {
@@ -45,7 +57,7 @@ footer {
   text-align: center; /* Center-aligns the text within each section */
 }
 .mainBody {
-  background: rgba(98, 174, 233, 0.1);
+  background: transparent;
   max-width: 700px;
   margin: 10px auto;
   border: 1px solid #d1d4ff;
@@ -57,4 +69,10 @@ body {
     rgb(102, 51, 153) 11.2%,
     rgb(69, 179, 224) 100.1%
   );
+}
+.current-emoji {
+  position: relative;
+  bottom: -40px;
+  right: 39px;
+  font-size: 80px;
 }
