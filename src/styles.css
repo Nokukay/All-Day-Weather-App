@@ -18,6 +18,9 @@ footer,
 }
 .current-condition {
   position: relative;
-  left: 540px;
+  left: 520px;
   font-size: 15px;
+}
+.humidity-wind {
+  display: inline-block;
 }
