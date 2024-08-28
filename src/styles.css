@@ -1,14 +1,20 @@
 h1,
-footer,
 .find-city {
   text-align: center;
   margin: 0;
 }
 .find-city {
   margin: 10px 0 0;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  margin: 40px 20px;
+  padding: 20px;
 }
 .current-date {
   text-align: center;
+  margin: 0;
 }
 .current-weather {
   text-align: center;
@@ -18,14 +24,18 @@ footer,
 }
 .current-condition {
   position: relative;
-  left: 520px;
+  left: 250px;
   font-size: 15px;
+  margin: 0 0 30px 0;
 }
 .humidity-wind {
   display: flex;
   justify-content: center; /* Centers items horizontally */
   align-items: center; /* Centers items vertically */
   gap: 20px; /* Optional: Adds space between the humidity and wind sections */
+  border: 1px solid #e8e6fe;
+  max-width: 300px;
+  margin: 0 auto;
 }
 .humidity,
 .wind {
@@ -33,4 +43,18 @@ footer,
   flex-direction: column;
   align-items: center;
   text-align: center; /* Center-aligns the text within each section */
+}
+.mainBody {
+  background: rgba(98, 174, 233, 0.1);
+  max-width: 700px;
+  margin: 10px auto;
+  border: 1px solid #d1d4ff;
+  border-radius: 15px;
+}
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(102, 51, 153) 11.2%,
+    rgb(69, 179, 224) 100.1%
+  );
 }
