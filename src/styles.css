@@ -14,7 +14,13 @@ h1,
   background: #f9f7fe;
 }
 .search-city {
+  background: white;
+  transition: all 200ms ease-in-out;
+}
+.search-city:hover {
   background: #48a6d8;
+  color: white;
+  cursor: pointer;
 }
 footer {
   text-align: center;
@@ -51,7 +57,7 @@ footer {
   border-radius: 40px;
   max-width: 250px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 10px 0;
   background: rgb(245, 245, 245, 0.5);
 }
 .humidity,
@@ -73,7 +79,7 @@ footer {
   background: rgb(245, 245, 245, 0.2);
   max-width: 700px;
   margin: 10px auto;
-  border: 1px solid #d1d4ff;
+  border: 1px solid #7d6fb7;
   border-radius: 15px;
 }
 body {
@@ -88,4 +94,7 @@ body {
   bottom: -40px;
   right: 39px;
   font-size: 80px;
+}
+a {
+  color: navy;
 }
