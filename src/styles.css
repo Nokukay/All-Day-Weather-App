@@ -103,3 +103,28 @@ body {
 a {
   color: navy;
 }
+.theme {
+  background: black;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  border: 1px solid #663399;
+  border-radius: 7px;
+  transition: all 200ms ease-in-out;
+}
+.theme:hover {
+  background: white;
+  color: black;
+}
+.dark {
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
+}
+.dark .mainBody {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
