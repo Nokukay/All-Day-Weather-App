@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WetherMe App</title>
     <link rel="stylesheet" href="src/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <button class="theme">Change Theme</button>
     <div class="mainBody">
       <header>
-        <h1>
-          <span class="material-symbols-outlined"> location_on </span> Ferndale
-        </h1>
-        <div class="current-date">Tue 19:35</div>
+        <h1 class="current-city" id="current-city">Ferndale</h1>
+
+        <div class="current-date" id="current-date">Tue 19:35</div>
       </header>
       <form class="find-city" id="find-city">
         <input
@@ -36,16 +33,16 @@
       </form>
 
       <div class="current-weather">
-        <span class="current-temperature">22°C</span>
-        <span class="current-emoji">⛅</span>
+        <span class="current-temperature" id="current-temperature">22°C</span>
+        <span class="current-emoji" id="current-emoji">⛅</span>
       </div>
-      <div class="current-condition">Cloudy</div>
+      <div class="current-condition" id="current-condition">Cloudy</div>
 
       <div class="humidity-wind">
         <div class="humidity">
-          <div class="humidity-icon">💧</div>
-          <div class="humidity-value">60%</div>
-          <div class="humidity-label">Humidity</div>
+          <div class="humidity-icon" id="humidity-icon">💧</div>
+          <div class="humidity-value" id="humidity-value">60%</div>
+          <div class="humidity-label" id="humidity-label">Humidity</div>
         </div>
         <div class="wind">
           <div class="wind-icon">🌬️</div>

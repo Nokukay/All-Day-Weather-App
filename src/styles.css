@@ -129,3 +129,8 @@ a {
 .dark .mainBody {
   color: white;
 }
+.material-symbols-outlined {
+  position: relative;
+  left: 265px;
+  bottom: -35px;
+}

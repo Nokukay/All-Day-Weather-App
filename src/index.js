@@ -45,7 +45,7 @@ function displayTemperature(response) {
 
 function search(event) {
   event.preventDefault();
-  let searchInputElement = document.querySelector("#search-input");
+  let searchInputElement = document.querySelector("#enter-city");
   let city = searchInputElement.value;
 
   let apiKey = "b2a5adcct04b33178913oc335f405433";
@@ -53,7 +53,7 @@ function search(event) {
 
   axios.get(apiUrl).then(displayTemperature);
 }
-let searchForm = document.querySelector("#search-form");
+let searchForm = document.querySelector("#find-city");
 searchForm.addEventListener("submit", search);
 
 let currentDateELement = document.querySelector("#current-date");
