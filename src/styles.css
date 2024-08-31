@@ -80,13 +80,7 @@ footer {
 .wind-icon {
   font-size: 25px;
 }
-.mainBody {
-  background: rgb(245, 245, 245, 0.2);
-  max-width: 700px;
-  margin: 10px auto;
-  border: 1px solid #7d6fb7;
-  border-radius: 17px;
-}
+
 body {
   background: linear-gradient(
     109.6deg,
