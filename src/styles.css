@@ -120,13 +120,12 @@ a {
   color: black;
 }
 .dark {
-  background: linear-gradient(
-    112.1deg,
-    rgb(32, 38, 57) 11.4%,
-    rgb(63, 76, 119) 70.2%
+  background: radial-gradient(
+    circle at 74.2% 50.9%,
+    rgb(14, 72, 222) 5.2%,
+    rgb(3, 22, 65) 75.3%
   );
 }
-.dark.mainBody {
-  background: rgba(255, 255, 255, 0.1);
+.dark .mainBody {
   color: white;
 }
