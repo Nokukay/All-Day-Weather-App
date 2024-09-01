@@ -109,59 +109,14 @@ function displayTemperature(response) {
 function search(event) {
   event.preventDefault();
   let searchInputElement = document.querySelector("#enter-city");
-  let city = searchInputElement.value.trim(); // Trim whitespace
-
-  if (!city) {
-    showError("Please enter a city name.");
-    return; // Stop execution if no city name is provided
-  }
+  let city = searchInputElement.value;
 
   let apiKey = "b2a5adcct04b33178913oc335f405433";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
-  axios
-    .get(apiUrl)
-    .then((response) => {
-      if (response.data.error) {
-        // Handle API-specific errors
-        throw new Error(response.data.error.message || "An error occurred");
-      }
-      displayTemperature(response);
-      clearError();
-    })
-    .catch((error) => {
-      console.error("Error fetching the weather data:", error);
-      showError("City not found. Please enter a valid city name.");
-      clearWeatherData();
-    });
+  axios.get(apiUrl).then(displayTemperature);
 }
 
-function showError(message) {
-  let errorElement = document.querySelector("#error-message");
-  if (errorElement) {
-    errorElement.innerHTML = message;
-  } else {
-    errorElement = document.createElement("span");
-    errorElement.id = "error-message";
-    errorElement.innerHTML = message;
-    document.body.appendChild(errorElement);
-  }
-}
-
-function clearError() {
-  let errorElement = document.querySelector("#error-message");
-  if (errorElement) {
-    errorElement.remove();
-  }
-}
-
-function clearWeatherData() {
-  document.querySelector("#current-city").innerHTML = "";
-  document.querySelector("#current-temperature").innerHTML = "";
-  document.querySelector("#current-condition").innerHTML = "";
-  document.querySelector("#current-emoji").innerHTML = "";
-  document.querySelector("#humidity-value").innerHTML;
-}
 let searchForm = document.querySelector("#find-city");
 searchForm.addEventListener("submit", search);
 
