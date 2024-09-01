@@ -136,5 +136,10 @@ a {
 }
 .search-city {
   border-radius: 17px;
-  font-size: 20px;
+  font-size: 16px;
+}
+.error-message {
+  text-align: center;
+  color: Red;
+  font-weight: bold;
 }
