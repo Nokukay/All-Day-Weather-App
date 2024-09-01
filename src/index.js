@@ -40,9 +40,15 @@ function displayTemperature(response) {
   let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#current-city");
   let currentCondition = document.querySelector("#current-condition");
+  let emojiElement = document.querySelector("#current-emoji");
+  let humidity = document.querySelector("#humidity-value");
+  let wind = document.querySelector("#wind-value");
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
   currentCondition.innerHTML = response.data.condition.description;
+  emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="Weather icon" />`;
+  humidity.innerHTML = response.data.temperature.humidity;
+  wind.innerHTML = response.data.wind.speed;
 }
 
 function search(event) {
@@ -56,7 +62,7 @@ function search(event) {
   axios.get(apiUrl).then(displayTemperature);
 }
 let searchForm = document.querySelector("#find-city");
-searchForm.addEventListener("submit", search);
+searchForm.addEventListener("click", search);
 
 let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();

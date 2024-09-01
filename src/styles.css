@@ -134,3 +134,7 @@ a {
   left: 265px;
   bottom: -35px;
 }
+.search-city {
+  border-radius: 17px;
+  font-size: 20px;
+}
