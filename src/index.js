@@ -39,8 +39,10 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#current-city");
+  let currentCondition = document.querySelector("#current-condition");
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
+  currentCondition.innerHTML = response.data.condition.description;
 }
 
 function search(event) {
