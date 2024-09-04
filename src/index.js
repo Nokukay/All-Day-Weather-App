@@ -97,6 +97,7 @@ function displayTemperature(response) {
   let emojiElement = document.querySelector("#current-emoji");
   let humidity = document.querySelector("#humidity-value");
   let wind = document.querySelector("#wind-value");
+  let country = document.querySelector("#current-country");
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
@@ -104,6 +105,7 @@ function displayTemperature(response) {
   emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="Weather icon" />`;
   humidity.innerHTML = response.data.temperature.humidity;
   wind.innerHTML = response.data.wind.speed;
+  country.innerHTML = response.data.city.country;
 }
 
 function search(event) {
