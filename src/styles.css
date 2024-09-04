@@ -20,6 +20,7 @@ h1,
 }
 .search-city {
   background: white;
+  border: 1px solid #b5c3e0;
   transition: all 200ms ease-in-out;
 }
 .search-city:hover {
@@ -36,12 +37,17 @@ footer {
   background: rgb(245, 245, 245, 0.2);
   max-width: 700px;
   margin: 10px auto;
-  border: 1px solid #7d6fb7;
+  border: 3px solid white;
   border-radius: 17px;
 }
 .current-date {
   text-align: center;
   margin: 0;
+}
+.current-country {
+  text-align: center;
+  color: #26c9fc;
+  font-weight: bold;
 }
 .current-weather {
   position: relative;
@@ -89,7 +95,7 @@ footer {
 }
 
 body {
-  background: white;
+  background: #f5f1fe;
 }
 
 .current-emoji {
