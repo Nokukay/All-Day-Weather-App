@@ -89,11 +89,7 @@ footer {
 }
 
 body {
-  background: linear-gradient(
-    109.6deg,
-    rgb(102, 51, 153) 11.2%,
-    rgb(69, 179, 224) 100.1%
-  );
+  background: white;
 }
 
 .current-emoji {
