@@ -105,7 +105,7 @@ function displayTemperature(response) {
   emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="Weather icon" />`;
   humidity.innerHTML = response.data.temperature.humidity;
   wind.innerHTML = response.data.wind.speed;
-  country.innerHTML = response.data.city.country;
+  country.innerHTML = response.data.country;
 }
 
 function search(event) {
