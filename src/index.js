@@ -118,17 +118,35 @@ function search(event) {
 
   axios.get(apiUrl).then(displayTemperature);
 }
-function displayForecast() {
-  let forecast = document.querySelector("#forecast");
 
-  forecast.innerHTML = ` <div class="weather-forecast-day">
-          <div class="weather-forecast-date">Thu</div>
+function getForecast(city) {
+  let apiKey = "f6ab9e5ca0fe6afo3te0065824dd0370";
+  apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response);
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+
+  let forecastHTML = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="weather-forecast-day">
+          <div class="weather-forecast-date">${day}</div>
           <div class="weather-forecast-icon">⛈️</div>
           <div class="weather-forecast-temperatures" >
             <div class="weather-forecast-temperature"><strong>10°</strong></div>
               <div class="weather-forecast-temperature">9°</div> 
             </div>
              </div>`;
+  });
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = forecastHTML;
 }
 
 let searchForm = document.querySelector("#find-city");
@@ -139,3 +157,4 @@ let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
 displayForecast();
+getForecast("Paris");
