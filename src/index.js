@@ -121,13 +121,12 @@ function search(event) {
 
 function getForecast(city) {
   let apiKey = "f6ab9e5ca0fe6afo3te0065824dd0370";
-  apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(displayForecast);
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
 }
 
 function displayForecast(response) {
-  console.log(response);
+  console.log(response.data);
 
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
 
@@ -157,4 +156,3 @@ let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
 displayForecast();
-getForecast("Paris");
