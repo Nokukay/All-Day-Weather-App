@@ -104,7 +104,7 @@ body {
   position: relative;
   bottom: -40px;
   right: 39px;
-  font-size: 80px;
+  font-size: 70px;
 }
 a {
   color: navy;
@@ -175,4 +175,9 @@ a {
 }
 .weather-forecast-temperature {
   padding: 0 10px;
+}
+.weather-app-unit {
+  position: relative;
+  top: -50px;
+  font-size: 20px;
 }
