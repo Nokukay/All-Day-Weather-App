@@ -34,13 +34,7 @@ footer {
   margin: 40px 20px;
   padding: 20px;
 }
-.mainBody {
-  background: rgb(245, 245, 245, 0.2);
-  max-width: 700px;
-  margin: 10px auto;
-  border: 3px solid white;
-  border-radius: 17px;
-}
+
 .current-date {
   text-align: center;
   margin: 0;
@@ -94,6 +88,13 @@ footer {
 .humidity-icon,
 .wind-icon {
   font-size: 25px;
+}
+.mainBody {
+  background: rgb(245, 245, 245, 0.2);
+  max-width: 700px;
+  margin: 10px auto;
+  border: 3px solid white;
+  border-radius: 17px;
 }
 
 body {
