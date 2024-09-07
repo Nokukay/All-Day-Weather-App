@@ -187,6 +187,9 @@ a {
   top: -50px;
   font-size: 20px;
 }
-.main {
-  border: 4px solid blue;
+hr {
+  border-color: #ffffff;
+  width: 650px;
+  margin-top: 15px;
+  margin-bottom: 14px;
 }
